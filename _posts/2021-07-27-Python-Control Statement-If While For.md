@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Python 기초 문법(2) - Control Statement : if, while, for"
+---
+
 ## Control Statement
 
 <br>

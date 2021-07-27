@@ -160,7 +160,8 @@ else:
 ---
 
 ## 2. While statement (반복문)
-<br>
+
+
 - Iterative Statement
 
 
@@ -284,7 +285,8 @@ print("커피가 모두 소진되었으니, 관리자에게 문의해주세요."
 --- 
 
 ## 3. For statement (반복문)
-<br>
+
+
 - Iterative Statement
 
 

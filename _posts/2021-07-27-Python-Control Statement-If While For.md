@@ -5,13 +5,12 @@ title:  "Python 기초 문법(2) - Control Statement : if, while, for"
 
 ## Control Statement
 
-<br>
 
-**프로그램의 흐름을 제어하는 명령어**를 말한다. 여기서 프로그램의 흐름은 컴퓨터가 어떤 일을 해야 하는지에 대한 과정이다. 프로그램은 조건과 반복의 나열이며, 이 **조건과 반복에 따라서 프로그램의 진행과정이 바뀌게 된다.** 
+**프로그램의 흐름을 제어하는 명령어**를 말한다. 여기서 프로그램의 흐름은 컴퓨터가 어떤 일을 해야 하는지에 대한 과정이다. 
+프로그램은 조건과 반복의 나열이며, 이 **조건과 반복에 따라서 프로그램의 진행과정이 바뀌게 된다.** 
 <br>
 <br>
 즉 control statement에는 **조건**과 **반복**있는데
-<br>
 <br>
 - 조건(Conditional Statement)에는 **if**문이 있고
 <br>
@@ -25,8 +24,6 @@ title:  "Python 기초 문법(2) - Control Statement : if, while, for"
 
 ## 1. If statement (조건문)
 <br>
-<br>
-
 - Conditional Statement
 
 
@@ -163,9 +160,7 @@ else:
 ---
 
 ## 2. While statement (반복문)
-
 <br>
-
 - Iterative Statement
 
 
@@ -289,9 +284,7 @@ print("커피가 모두 소진되었으니, 관리자에게 문의해주세요."
 --- 
 
 ## 3. For statement (반복문)
-
 <br>
-
 - Iterative Statement
 
 

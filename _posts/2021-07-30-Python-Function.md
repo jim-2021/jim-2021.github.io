@@ -1,4 +1,8 @@
-# 3-13. Function
+---
+layout: single
+title:  "Python 기초 문법(3) - Function"
+---
+
 
 ## Function이란?
 
@@ -125,7 +129,7 @@ add2(5, num3=50)   # 키워드 아규먼트 : 특정 파라미터를 지정해�
 - **input -- (Function) ---> output 의 구조**
 - **어떤 input parameter가 들어가서, 어떤 ouput parameter가 나오는지 주목해야한다!**
 
-### 3. 리턴
+### 3. 리턴(Retrun)
 
 - 함수를 실행한 결과를 저장한다.
 - 중간에 함수의 코드 실행을 종료시킨다.
@@ -223,7 +227,7 @@ print(say('end'))
 
 ### 4. 함수 정의의 다양한 형태
 
-#### 1. 가장 흔하게 사용되는 경우 -> 함수 parameter와 return이 모두 존재하는 경우.
+#### 1) 함수 parameter와 return이 모두 존재하는 경우.
 
 
 ```python
@@ -240,7 +244,7 @@ def get_loss(model, metric):
 # 명시적으로 어떤 데이터가 들어갔는지, 나오는지 알고 있으면 내부 코드를 보지 않아고 어떤 기능인지 파악할 수 있다.
 ```
 
-#### 2. 함수 parameter는 없고 return이 존재하는 경우.
+#### 2) 함수 parameter는 없고 return이 존재하는 경우.
 
 
 ```python
@@ -251,7 +255,7 @@ def get_data():
 # 데이터를 불러오는데 그 데이터가 정해져 있음!
 ```
 
-#### 3. 함수 parameter는 있는데 return이 없는 경우.
+#### 3) 함수 parameter는 있는데 return이 없는 경우.
 
 
 ```python
@@ -264,7 +268,7 @@ def save_data(path, data):
     data.co_csv(path)  # 저장 : 데이터를 받아서 해당 경로에 저장해 주는 코드 
 ```
 
-#### 4. 함수 parameter도 없고 return도 없는 경우.
+#### 4) 함수 parameter도 없고 return도 없는 경우.
 
 
 ```python
@@ -394,8 +398,8 @@ print(name)
 ### 7. Lambda 함수
 
 - 굉장히 간단한 함수가 있는 경우, 한 줄짜리 함수로 간편하게 사용할 수 있다.
+- 삼항연산
 > inline fuction, def라는 명령어 없이 간단하게 정의해서 사용할 수 있다.<br>
-> 삼항연산
 
 - lambda 함수와 반복문을 통해 함수의 정의없이 다양한 프로그래밍이 가능하다.
 

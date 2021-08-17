@@ -842,8 +842,7 @@ plt.show()
 
 
     
-![png](output_25_0.png)
-    
+![png](/assets/EDA-data/output_25_0.png)    
 
 
 
@@ -864,7 +863,7 @@ plt.show()
 
 
     
-![png](output_26_0.png)
+![png](/assets/EDA-data/output_26_0.png)
     
 
 
@@ -896,7 +895,7 @@ plt.show()
 
 
     
-![png](output_29_0.png)
+![png](/assets/EDA-data/output_29_0.png)
     
 
 
@@ -916,7 +915,7 @@ plt.show()
 
 
     
-![png](output_31_0.png)
+![png](/assets/EDA-data/output_31_0.png)
     
 
 
@@ -940,7 +939,7 @@ plt.show()
 
 
     
-![png](output_33_0.png)
+![png](/assets/EDA-data/output_33_0.png)
     
 
 
@@ -1042,7 +1041,7 @@ plt.show()
 
 
     
-![png](output_38_0.png)
+![png](/assets/EDA-data/output_38_0.png)
     
 
 
@@ -1070,7 +1069,7 @@ plt.title("Reorder Ratio", fontsize=15)
 
 
     
-![png](output_41_1.png)
+![png](/assets/EDA-data/output_41_1.png)
     
 
 
@@ -1094,7 +1093,7 @@ plt.show()
 
 
     
-![png](output_44_0.png)
+![png](/assets/EDA-data/output_44_0.png)
     
 
 
@@ -1775,7 +1774,7 @@ plt.show()
 
 
     
-![png](output_67_0.png)
+![png](/assets/EDA-data/output_67_0.png)
     
 
 
@@ -1796,7 +1795,7 @@ plt.show()
 
 
     
-![png](output_69_0.png)
+![png](/assets/EDA-data/output_69_0.png)
     
 
 
@@ -1818,7 +1817,7 @@ plt.show()
 
 
     
-![png](output_71_0.png)
+![png](/assets/EDA-data/output_71_0.png)
     
 
 
@@ -1836,7 +1835,7 @@ plt.show()
 
 
     
-![png](output_73_0.png)
+![png](/assets/EDA-data/output_73_0.png)
     
 
 
@@ -2057,7 +2056,7 @@ plt.show()
 
 
     
-![png](output_79_0.png)
+![png](/assets/EDA-data/output_79_0.png)
     
 
 
@@ -2083,7 +2082,7 @@ plt.show()
 
 
     
-![png](output_82_0.png)
+![png](/assets/EDA-data/output_82_0.png)
     
 
 
@@ -2269,7 +2268,7 @@ plt.show()
 
 
     
-![png](output_87_0.png)
+![png](/assets/EDA-data/output_87_0.png)
     
 
 
@@ -2422,7 +2421,7 @@ plt.show()
 
 
     
-![png](output_92_0.png)
+![png](/assets/EDA-data/output_92_0.png)
     
 
 
@@ -2752,7 +2751,7 @@ plt.show()
 
 
     
-![png](output_98_0.png)
+![png](/assets/EDA-data/output_98_0.png)
     
 
 
@@ -2778,7 +2777,7 @@ plt.show()
 
 
     
-![png](output_101_0.png)
+![png](/assets/EDA-data/output_101_0.png)
     
 
 

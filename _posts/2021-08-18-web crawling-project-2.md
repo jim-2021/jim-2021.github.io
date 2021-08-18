@@ -1,8 +1,8 @@
-### Web Driver와 Selenium을 이용해 동적 페이지에 대한 웹 크롤링 진행
+### Web Driver와 Selenium을 이용한 동적 페이지 크롤링
 
 이전 포스팅에서는 **네이버 영화 리뷰 크롤링**을 통해 정적 페이지에 대한 웹 크롤링을 진행하였다.
 
-[네이버 영화 리뷰 크롤링 보러가기]https://jim-2021.github.io/web-crawling-project-1/
+![네이버 영화 리뷰 크롤링 보러가기] https://jim-2021.github.io/web-crawling-project-1/
 
 이번에는 동적 페이지 크롤링을 해볼 것이다.
 

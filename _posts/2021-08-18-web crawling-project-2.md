@@ -396,7 +396,7 @@ plt.imshow(cloud)
 
 
     
-![png](assets/webcrawling/output_22_1.png)
+![png](/assets/webcrawling/output_22_1.png)
     
 
 
@@ -541,7 +541,7 @@ get_tags_and_make_cloud('아이디', '비밀번호', '친환경', 200, 30)
 
 
     
-![png](assets/webcrawling/output_25_0.png)
+![png](/assets/webcrawling/output_25_0.png)
     
 
 

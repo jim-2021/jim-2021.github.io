@@ -2,7 +2,7 @@
 
 이전 포스팅에서는 **네이버 영화 리뷰 크롤링**을 통해 정적 페이지에 대한 웹 크롤링을 진행하였다.
 
-![네이버 영화 리뷰 크롤링 보러가기] https://jim-2021.github.io/web-crawling-project-1/
+[네이버 영화 리뷰 크롤링 보러가기] https://jim-2021.github.io/web-crawling-project-1/
 
 이번에는 동적 페이지 크롤링을 해볼 것이다.
 
@@ -396,7 +396,7 @@ plt.imshow(cloud)
 
 
     
-![png](output_22_1.png)
+![png](assets/webcrawling/output_22_1.png)
     
 
 
@@ -541,7 +541,7 @@ get_tags_and_make_cloud('아이디', '비밀번호', '친환경', 200, 30)
 
 
     
-![png](output_25_0.png)
+![png](assets/webcrawling/output_25_0.png)
     
 
 

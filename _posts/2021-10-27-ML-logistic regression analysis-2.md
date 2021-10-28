@@ -4,7 +4,7 @@
 
 ### 성공확률
 회귀계수가 추정되고 나면 주어진 설명변수 집합에 대한 성공확률을 다음과 같이 계산할 수 있다.
-<img src = "./image/로지스틱회귀/성공확률.JPG" width="60%">
+![JPG](/assets/images/성공확률.JPG)
 
 
 ### 로지스틱 함수의 의미
@@ -12,13 +12,13 @@
 실제 상황에서는 특정 변수에 대한 확률값이 선형이 아닌 S-커브 형태를 따르는 경우가 많다.
 - 월소득에 따른 자가 집 보유 확률
 - 월소득에 따른 대출 상환 못할 확률 
-<img src = "./image/로지스틱회귀/실생활에 유용 예시.JPG" width="70%">
+![JPG](/assets/images/실생활에 유용 예시.JPG)
 
 이진 분류를 위한 cut-off 설정 
 - Threshold(기준값)
 - 일반적으로 0.5가 주로 사용된다.
 - 사전확률을 고려하거나 검증 데이터의 정확도를 최대화하는 cut-off가 사용될 수도 있다.
-<img src = "./image/로지스틱회귀/cut-off.JPG" width="70%">
+![JPG](/assets/images/cut-off.JPG)
 
 - 일반적으로 성공범주는 소수범주이다.(더 중요한 범주)
     - 마케팅에서의 응답고객
@@ -33,23 +33,23 @@ baseline 모델 : 다른 복잡한 모델을 만들었을 때 baseline 모델보
 ### 로지스틱 회귀분석 : 해석
 
 #### 회귀계수의 의미 : 해당 변수가 1증가함에 따른 로그 승산의 변화량
-<img src = "./image/로지스틱회귀/로지스틱 회귀분석 식.JPG" width="50%">
+![JPG](/assets/images/로지스틱 회귀분석 식.JPG)
 
 
 #### 승산 비율 : Odds Ratio
 - 나머지 변수는 모두 고정시킨 상태에서 한 변수를 1만큼 증가시켰을 때 변화하는 Odds의 비율 
-<img src = "./image/로지스틱회귀/승산 비율 식 약분.JPG" width="70%">
+![JPG](/assets/images/승산 비율 식 약분.JPG)
 - x1이 증가하게 되면 성공에 대한 승산 비율이 $e^{\beta_1}$만큼 변화한다.
 
 
 - 회귀계수가 양수 $\rightarrow$ 변수가 증가하면 성공 확률이 **증가** (성공범주와 설명변수 양의 상관관계)
 - 회귀계수가 음수 $\rightarrow$ 변수가 증가하면 성공 확률이 **감소** (성공범주와 설명변수 음의 상관관계)
-<img src = "./image/로지스틱회귀/내 그림.JPG" width="30%">
+![JPG](/assets/images/내 그림.JPG)
 
 
 #### 로지스틱 회귀분석 결과 및 해석
 - 로지스틱 회귀분석을 수행하고 나면 선형 회귀분석과 유사하게 다음과 같은 표를 결과로 얻을 수 있다.
-<img src = "./image/로지스틱회귀/로지스틱 해석 표.JPG" width="70%">
+![JPG](/assets/images/로지스틱 해석 표.JPG)
 
 - 회귀계수(Coefficient)
     - 베타값
@@ -65,21 +65,21 @@ baseline 모델 : 다른 복잡한 모델을 만들었을 때 baseline 모델보
 #### 신용카드 연체 예측
 - 단변량 로지스틱 회귀분석 
     - 변수 1개 : balance
-    <img src = "./image/로지스틱회귀/단변량.JPG" width="70%">
+    ![JPG](/assets/images/단변량.JPG)    
 - 다변량 로지스틱 회귀분석 
     - 변수 여러 개 : balance, income, student
-    <img src = "./image/로지스틱회귀/다변량.JPG" width="70%">
+    ![JPG](/assets/images/다변량.JPG)
 
 ## 다항 로지스틱 회귀분석
 
 - 로지스틱 회귀분석을 범주가 3개 이상인 다범주 분류에 적용하는 방식이다.
 - 기준(Baseline)이 되는 범주를 설정하고 이 범주 대비 다른 범주가 발생할 로그 승산을 회귀식으로 추정한다.
-<img src = "./image/로지스틱회귀/다항 그림.JPG" width="50%">
+![JPG](/assets/images/다항 그림.JPG)
 
 
 - 3개의 범주를 가진 분류 문제의 경우 회귀계수 추정
     - 기준 : 3번 범주
-     <img src = "./image/로지스틱회귀/다항 회귀식 2개.jpg" width="70%">
+     ![JPG](/assets/images/다항 회귀식 2개.JPG)
 
 $\Rightarrow$ 2개의 회귀식 추정
 
@@ -88,10 +88,10 @@ $\Rightarrow$ 사용하는 범주와 데이터가 다르기 때문에 추정된 
 
 - 왜 범주는 3개인데 2개의 모형만 학습하는가?
     - 각 범주에 속할 확률의 합은 항상 1이므로 나머지 k번째 범주에 대한 확률은 자동으로 산출된다.
-    <img src = "./image/로지스틱회귀/다항 3범주 회귀식.JPG" width="60%">
+    ![JPG](/assets/images/다항 3범주 회귀식.JPG)
     
 #### 다항 로지스틱 회귀분석에서의 회귀계수 분석 
 - 개별 모형에 대해서 회귀계수와 이에 대한 유의확률을 산출할 수 있다.
     - Total phenols, Flavanoids, Monflavanoid penols, Hue, OD280~ 변수는 1 vs 3, 2 vs 3에서 모든 유의미한 변수로 나타난다.
     - Ash., Proanthocyanins 변수는 범주 1과 3을 구분할 때는 유의미하지 않으나 2와 3을 구분할 때 매우 유의미하다.
-    <img src = "./image/로지스틱회귀/다항 회귀분석 해석.JPG" width="70%">
+    ![JPG](/assets/images/다항 회귀분석 해석.JPG)

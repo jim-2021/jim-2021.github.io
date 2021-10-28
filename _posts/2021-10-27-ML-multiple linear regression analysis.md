@@ -11,7 +11,7 @@
 
 회귀분석의 종류에는 
 
-![JPG](assets/images/회귀모형 종류.JPG)
+![image](assets/images/회귀모형 종류.JPG)
 
 <u>X가 여러개(Multiple)</u> 이면서 <u>선형(Linear)</u>인 **다중 선형 회귀분석**에 대해 알아보자.
 

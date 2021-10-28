@@ -5,7 +5,7 @@
 ![JPG](/assets/images/이진값 그래프.JPG)
 직선이 산출 되긴 하지만 이 직선이 과연 데이터를 잘 설명할 수 있는지는 별개의 문제이다.
 
-![JPG](/assets/images/회귀식.JPG)
+![JPG](/assets/images/회귀식.jpg)
 
 우변(설명변수)의 범위에 제한이 없기 때문에 좌변(종속변수) 역시 범위의 제한을 받지 않아야 한다. $\Rightarrow$ $[-\infty, \infty]$
 

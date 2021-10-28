@@ -18,7 +18,7 @@
 
 - 목적 : 종속변수 Y와 설명변수 집합 X1, X2, ... , Xp 사이의 관계를 선형으로 가정하고 이를 가장 잘 설명할 수 있는 회귀계수를 추정
 
-<img src = "./image/다중선형회귀/회귀모형 식.JPG" width="50%">
+![JPG](/assets/images/회귀모형 식.JPG)
 
 $y$ : 정답(관측된 값)
 
@@ -42,7 +42,7 @@ $\hat{y}$ 식에서의 미지수(파라미터)는 $\hat{\beta}$(선형회귀계�
 
 그런데 생각해보면 당연히 <u>실제 값($y$)</u>과 <u>우리가 추정한 값($\hat{y}$)</u>의 차이는 적을수록 좋다.
 
-<img src = "./image/다중선형회귀/잔차.JPG" width="40%">
+![JPG](/assets/images/잔차.JPG){: width="50" height="50"}
 <center> [잔차] </center>
 
 이 차이를 **잔차(residual)**라고 한다.

@@ -33,9 +33,9 @@
 - 범주에 대한 중요도의 차이가 없을 경우 임의의 한 범주를 Positive Class로 설정(성별 분류, 이미지 기반의 개/고양이 분류 등)
 
 본 포스팅에서 사용할 예시는 체지방률을 사용한 성별 분류이며, 체지방률이 20보다 크면 여성으로, 작으면 남성으로 분류한 것이다.
-<img src = "./image/분류모형성능평가/정오행렬.JPG" width="70%">
+![JPG](/assets/images/정오행렬.JPG)
 
-#### <얼마나 잘 맞췄는지 : 민감도, 특이도>
+#### < 얼마나 잘 맞췄는지 : 민감도, 특이도 >
 
 #### 1. 민감도 or True Positive Rate(TPR)
 - 실제 Positive Class 객체들 중에서 모델에 의해 Positive Class로 예측된 비율
@@ -47,7 +47,7 @@
 
 <br>
 
-#### <얼마나 못 맞췄는지 : 누락, 오경보>
+#### < 얼마나 못 맞췄는지 : 누락, 오경보 >
 #### 3. 누락(Miss) or False Negative Rate(FNR)
 - 실제 Positive Calss 객체 중에서 Negative Calss로 잘못 예측된 비율
 - n10/(n11+n10) = 1/5 = 0.2
@@ -69,18 +69,18 @@ Q. 정분류율이 높으면 항상 좋은 모형인가?
 - 예시 : 제조업에서의 불량 제품 탐지 모형
 - 총 1000개의 제품. 불량률 1%(Class Imbalanced). 분석가 A씨는 99% 정확도를 자랑하는 불량탐지 모델을 만들고 기뻐했지만
 - 불량을 하나도 잡아내지 못하는 쓸모없는 모형이었다.
-<img src = "./image/분류모형성능평가/분석가A씨.JPG" width="50%">
+![JPG](/assets/images/분석가A씨.JPG)
 
 위의 예시처럼 클래스 항목이 불균형한 경우에는 정확도(Accuracy)의 평가 지표로는 모델의 성능을 신뢰할 수 없다.
 
 클래스의 불균형 문제에 따른 평가 지표들을 살펴보자. 
 
-#### <정분류율의 단점을 고려한 성능 평가 지표>
+#### < 정분류율의 단점을 고려한 성능 평가 지표 >
 - 균형 정확도, 재현율, 정밀도, F1-지표
 
 #### ★7. 균형 정확도(Balanced Correction Rate, BCR) 
 - 민감도(TPR)와 특이도(TNR)를 고려한 성능 평가 지표
-<img src = "./image/분류모형성능평가/균형정확도.JPG" width="70%">
+![JPG](/assets/images/균형정확도.JPG)
 
 #### 8. 재현율(Recall) = TPR
 - 실제 Positive Class 객체들 중에서 Positive Class로 맞게 예측된 비율
@@ -100,7 +100,7 @@ precision과 recall은 보통 반대되는 수치를 가진다.(Trade-Off)
 - 재현율과 정밀도의 조화 평균
 - 1이 될 때 최적의 Precision과 Recall을 의미하고, 0이 최악을 의미한다.
 - Positive Class에 중점 $\rightarrow$ 여성(F)을 잘 맞추면 점수 올라감
-<img src = "./image/분류모형성능평가/F1지표.JPG" width="70%">
+![JPG](/assets/images/F1지표.JPG)
 
 앞서 분석가 A씨가 만든 모델을 각각의 지표로 성능 평가를 수행해보면
 - 정분류율 : 99%
@@ -111,9 +111,9 @@ precision과 recall은 보통 반대되는 수치를 가진다.(Trade-Off)
 - C by C 정방행렬
 - 정오 행렬의 대각 성분은 정분류된 Case, 비대각 성분은 오분류된 Case
 - **정분류율, 균형정확도, Marco F1-Score 산출 가능**
-<img src = "./image/분류모형성능평가/정분류율, 균형정확도.JPG" width="70%">
-<img src = "./image/분류모형성능평가/범주3의 F1지표.JPG" width="80%">
+![JPG](/assets/images/정분류율, 균형정확도.JPG)
+![JPG](/assets/images/범주3의 F1지표.JPG)
 micro F1 : 각 범주별 F1-지표
 
 ### 상황별 대표 분류 평가 지표 가이드라인
-<img src = "./image/분류모형성능평가/상황별 평가지표.JPG" width="70%">
+![JPG](/assets/images/상황별 평가지표.JPG)

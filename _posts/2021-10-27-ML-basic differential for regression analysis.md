@@ -44,7 +44,7 @@
 
 <u>미분을 통해서 **극대값**과 **극소값**을 알 수 있다.</u>
 
-![극대값극소값](/asset/image/극대값극소값.JPG)
+![극대값극소값](/assets/images/극대값극소값.JPG)
 
 $\rightarrow$ 미분으로 구한 도함수를 통해 미분가능한 함수의 극대값, 극소값을 알 수 있다.
 
@@ -54,7 +54,7 @@ $\rightarrow$ $f\prime(x)=0$, 미분값이 0이 되는 지점
 
 ### $\Rightarrow$ Likelihood(가능도함수) - 미분의 활용1
 
-![가능도함수](image/IMG_1060.JPG)
+![가능도함수](/assets/images/가능도함수.JPG)
 
 - **가능도함수**: 각각의 $x$가 주어졌을 때 **평균($\mu$)을 구하는 확률** $\Rightarrow$ <u>$\mu$에 대한 함수</u>
     - 확률변수의 실현값을 알 때(데이터가 있을 때) 모수($\mu$)를 추정하고자 함
@@ -107,7 +107,7 @@ $\rightarrow$ $f\prime(x)=0$, 미분값이 0이 되는 지점
     - 주로 모수에 hat을 붙여서($\hat{\mu_0}$) 표현한다.
     - **Likelihood를 $\mu_0$로 미분해서 0을 만드는 값 $\Rightarrow$ 최대가 되는 지점(극대값)**
 
-![likilihood](image/IMG_1061.JPG)
+![likilihood](/assets/images/likilihood.JPG)
 
 $\rightarrow$ likelihood의 접선의 기울기가 0이 되는 지점에서의 모수값
 

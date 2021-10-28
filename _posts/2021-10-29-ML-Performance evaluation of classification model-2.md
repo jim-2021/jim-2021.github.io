@@ -15,17 +15,17 @@
 
 ### Area Under Peceiver Operating Characteristic Curve (AUROC)
 
-#### <예시>
+#### < 예시 >
 - 제품의 불량을 판정하는 문제
     - 총 1000개의 제품
     - 20개의 제품이 불량(불량 비율 : 0.2)
     - Label : 1(NG), 0(G)
     - 분류 알고리즘에 의해 추정된 불량 확률(P(NG))과 실제 범주 레이블(불량=1)
         - P(NG) : 모든 알고리즘 동일
-<img src = "./image/분류모형성능평가/표.JPG" width="70%">
+![JPG](/assets/images/표.JPG)
 
 - 분류 기준값이 달라짐에 따라 정오행렬이 변화하고, 성능도 달라진다.
-<img src = "./image/분류모형성능평가/cutoff변화에 따른 성능지표 변화.JPG" width="60%">
+![JPG](/assets/images/cutoff변화에 따른 성능지표 변화.JPG)
 - 특정 알고리즘이 산출한 동일한 확률값들에 의해서 cut-off가 달려졌기 때문이다! (확률값이 달라지지x)
 - 동일한 확률값인데 성능이 다르게 된다!
 
@@ -34,29 +34,29 @@
 2. 가능한 모든 cut-off 경우에 대해 True Positive Rate(TPR)와 False Positive Rate(FPR)를 계산한 후
 3. X축이 False Positive Rate, Y축이 True Positive Rate가 되는 2차원 그래프 그리기
 
-- 100개의 Class(제품) $\rightarrow$ 101개의 cut-off 생성 가능
+- 100개의 Class(제품) -> 101개의 cut-off 생성 가능
 
 예를 들어, 3번째 cut-off의 경우 2번과 3번 사이에 위치하고, 이때의 TPR은 0.1, FPR은 0이다. 
-<img src = "./image/분류모형성능평가/3번째 cutoff.JPG" width="60%">
+![JPG](/assets/images/3번째 cutoff.JPG)
 
 2. 모든 가능한 cut-off애 대해 TPR과 FPR 산출
-<img src = "./image/분류모형성능평가/cutoff에 대한 TPR, FPR 산출 표.JPG" width="50%">
+![JPG](/assets/images/cutoff에 대한 TPR, FPR 산출 표.JPG)
 
 3. ROC Curve 그래프 그리기
-<img src = "./image/분류모형성능평가/roc커브.JPG" width="60%">
+![JPG](/assets/images/roc커브.JPG)
 
 #### ROC Curve와 Cut-off와의 관계
 - cut-off를 타이트하게 잡느냐, 느슨하게 잡느냐에 따라서 모든 가능한 TPR과 FPR의 조합 중 한 점으로 표현된다.
 - 이 점의 값을 기준으로 해서 성능 지표들(정분류율, 균형정확도, F1-지표)의 값이 도출된다.
 - 즉, 동일한 알고리즘이라고 해도 cut-off가 다르면 성능 지표 값이 달라질 수 있다.
-- $\Rightarrow$ 정오행렬의 문제점
-<img src = "./image/분류모형성능평가/cutoff와 roc curve 관계.JPG" width="50%">
+- => 정오행렬의 문제점
+![JPG](/assets/images/cutoff와 roc curve 관계.JPG)
 
 #### AUROC : ROC Curve 아래의 면적
-- **정오행렬과 달리 AUROC는 모델의 예측 결과가 주어지면 단 1개의 성능 지표 값이 도출된다. $\Rightarrow$ 보다 공정한 평가 지표!**
+- **정오행렬과 달리 AUROC는 모델의 예측 결과가 주어지면 단 1개의 성능 지표 값이 도출된다. => 보다 공정한 평가 지표!**
 - 이상적인 분류기는 1의 값을 갖고, 무작위 분류기는 0.5의 값을 가진다. $\rightarrow$ 면적이 클수록 좋은 모델!
 - **cut-off에 독립적인 알고리즘 성능 평가 지표로 사용될 수 있다.**
-<img src = "./image/분류모형성능평가/auroc 그래프.JPG" width="50%">
+![JPG](/assets/images/auroc 그래프.JPG)
 
 ## 오분류 비용
 
@@ -80,11 +80,11 @@
 - 예시 : 공정 데이터 기반의 제품 불량 탐지 모형
     - 총 1000개의 제품, 990개 정상, 10개 불량
     - 두 가지의 모델 비교
-<img src = "./image/분류모형성능평가/오분류 비용.JPG" width="70%">
+![JPG](/assets/images/오분류 비용.JPG)
 
 두 모델의 경제적 가치를 살펴보면 
 
 - 첫 번째 모델의 경제적 가치는 18,800,000
 - 두 번째 모델의 경제적 가치는 19,300,000(1번 모델 대비 +500,000)
 
-**$\Rightarrow$ 모델의 비대칭 오분류 비용을 통해 경제적 가치를 파악할 수 있다.**
+**=> 모델의 비대칭 오분류 비용을 통해 경제적 가치를 파악할 수 있다.**

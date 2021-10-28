@@ -42,8 +42,7 @@ $\hat{y}$ 식에서의 미지수(파라미터)는 $\hat{\beta}$(선형회귀계�
 
 그런데 생각해보면 당연히 <u>실제 값($y$)</u>과 <u>우리가 추정한 값($\hat{y}$)</u>의 차이는 적을수록 좋다.
 
-![JPG](/assets/images/잔차.JPG){: width="1000" height="1000"}
-<center> [잔차] </center>
+![JPG](/assets/images/잔차.JPG)
 
 이 차이를 **잔차(residual)**라고 한다.
 
@@ -65,7 +64,7 @@ A. 잔차의 제곱합은 미분이 가능한 형태로 유일한 해를 찾을 
 
 
 #### 회귀계수를 추정해보자.
-<img src = "./image/다중선형회귀/회귀계수 추정(행렬).JPG" width="70%">
+![JPG](/assets/images/회귀계수 추정(행렬).JPG)
 
 **회귀계수 $\beta$는 학습데이터에 대해 유일하고 명시적인 해(solution)가 존재한다!**
 
@@ -89,7 +88,7 @@ $\hat{\beta_p}$의 검정
 - t검정을 통해서 검정
     - $t = \frac{\hat{B_p}}{\frac{S}{\sqrt{S_{xx}}}} = \frac{\hat{B_p}}{s.e(\hat{B_p})}$
 
-<img src = "./image/다중선형회귀/회귀계수 검정.JPG" width="60%">
+![JPG](/assets/images/회귀계수 검정.JPG)
 
 - Coefficient : 회귀계수
 - Std.error : 회귀계수의 표준오차
@@ -107,14 +106,14 @@ $\hat{\beta_p}$의 검정
 - 추정된 모형이 얼마나 정확한지 평가
 
 **종속변수의 전체 변동성(분산) = 회귀식이 설명할 수 있는 변동성 + 회귀식이 설명할 수 없는 변동성**
-<img src = "./image/다중선형회귀/SST=SSR+SSE.JPG" width="60%">   
+![JPG](/assets/images/SST=SSR+SSE.JPG)  
 - SST : 종속변수 전체 변동성 - 정해져 있다.
 - SSR : 회귀식이 설명할 수 있는 변동성
 - SSE : 회귀식이 설명할 수 없는 변동성
 
 
 $R^2$, 결정계수 = 전체 변동성 중 회귀식이 설명할 수 있는 변동성의 비율
-<img src = "./image/다중선형회귀/r2식.JPG" width="40%">   
+![JPG](/assets/images/r2식.JPG)  
     
 - $R^2 = 0$ $\rightarrow$ 추정된 회귀직선이 X와 Y의 관계를 전혀 설명하지 못함
 - $R^2 = 1$ $\rightarrow$ 추정된 회귀직선으로 Y의 총변동이 완전히 설명됨
@@ -132,7 +131,7 @@ $R^2$, 결정계수 = 전체 변동성 중 회귀식이 설명할 수 있는 변
     - $F = \frac{V_1/k_1}{V_2/k_2} \sim F(k_1,k_2)$
     - 두 확률변수 V1, V2가 서로 독립인 카이제곱 분포를 따른다고 할 때 확률변수 F는 F분포를 따른다. F검정과 분산분석 등에서 주로 사용됨.
     
-<img src = "./image/다중선형회귀/모델검정1.JPG" width="60%">
+![JPG](/assets/images/모델검정1.JPG) 
 
 **위 대립가설은 기각하기 너무 쉬운 가설이다. 변수가 추가되면 추가될 수록 기각하기 쉬워진다.**
 - F-Statistics = $\frac{MSR}{MSE}$
@@ -140,7 +139,7 @@ $R^2$, 결정계수 = 전체 변동성 중 회귀식이 설명할 수 있는 변
     - $\Rightarrow$ F통계량 커짐(제곱합의 형태니까) 
     - $\Rightarrow$ p-value 작아진다.
     
-<img src = "./image/다중선형회귀/모델검정2.JPG" width="70%">
+![JPG](/assets/images/모델검정2.JPG)
 
 $\Rightarrow$ 변수의 수가 많을 때 $R^2$ 와 F검정의 결과가 큰 의미를 가지지 않을 수 있다.(무조건 신뢰 x)
 
@@ -156,7 +155,7 @@ No! 모델이 학습데이터에 존재하는 노이즈까지 외우게 되어 �
 
 #### 1. 데이터 분할
 
-<img src = "./image/다중선형회귀/데이터분할.JPG" width="40%">
+![JPG](/assets/images/데이터분할.JPG)
 
 - training : 학습 데이터 $\rightarrow$ 실제로 모델을 만들 때 사용하는 데이터
 - validation : 검증 데이터 $\rightarrow$ 학습 데이터를 통해 만든 모델을 검증(ex.과적합)
@@ -182,7 +181,7 @@ No! 모델이 학습데이터에 존재하는 노이즈까지 외우게 되어 �
     - $R^2$의 단점을 보완해주는 지표
     - $R^2$에 변수의 수만큼 penalty를 준다.
     - 유의하지 않은 변수가 추가될 경우 증가하지 않는다.
-<img src = "./image/다중선형회귀/adjusted R2.JPG" width="40%">
+![JPG](/assets/images/adjusted R2.JPG)
 
 3. MAE (Mean Absolute Error)
     - 평균절대오차
@@ -190,28 +189,28 @@ No! 모델이 학습데이터에 존재하는 노이즈까지 외우게 되어 �
     - 지표 자체가 직관적이며 예측변수와 단위가 같다.
     - 절대적인 차이가 중요한 분야에서 사용됨 (예. 추천시스템의 평점 예측)
     - 단점 : 상대적인 차이에 대한 정보를 제공하지 못한더,
-<img src = "./image/다중선형회귀/mae.JPG" width="30%">
+![JPG](/assets/images/mae.JPG)
 
 4. MAPE (Mean Absolute Percentage Error)
     - 실제값 대비 얼마나 예측 차이가 있는지를 비율(%)로 측정
     - 상대적인 오차율이 절대적인 오차 수치보다 중요한 분야에서 자주 사용된다. (예. 제조업에서의 품질지표 관리)
     - 0에 가까울수록 성능이 좋다고 해석한다.
-<img src = "./image/다중선형회귀/mape.JPG" width="30%">
+![JPG](/assets/images/mape.JPG)
 
 5. MSE, RMSE
     - 실제값과 예측값 사이의 오차의 제곱의 평균을 측정(MSE 단점 : 예측변수와 단위가 다르다.)
     - 부호의 영향을 제거하기 위해 절대값이 아닌 제곱(제곱합의 제곱근)을 취한 지표
     - 잔차를 제곱하기 때문에 이상치에 민감하다.
     - 작을수록 좋지만, 과도하게 줄이면 과적합의 오류를 범할 가능성이 있다. $\rightarrow$ 검증데이터의 MSE를 줄이는 방향으로!
-<img src = "./image/다중선형회귀/mse, rmse.JPG" width="60%">
+![JPG](/assets/images/mse, rmse.JPG)
 
 (참고용)
 
 6. AIC (Akaike information criterion)
     - MSE에 변수 수만큼 penalty를 주는 지표
-<img src = "./image/다중선형회귀/aic.JPG" width="30%">
+![JPG](/assets/images/aic.JPG)
 
 7. BIC (Bayes information criterion)
     - AIC의 단점을 보완한 지표 (AIC:표본 n이 커질 때 부정확해짐)
     - 큰 차이는 없다.
-<img src = "./image/다중선형회귀/bic.JPG" width="30%">
+![JPG](/assets/images/bic.JPG)

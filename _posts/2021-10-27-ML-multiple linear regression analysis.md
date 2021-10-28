@@ -10,7 +10,7 @@
 입력 변수 X에 대해서 연속형 출력 변수 Y를 예측하는 것을 말한다.
 
 회귀분석의 종류에는 
-<img src = "./image/다중선형회귀/회귀모형 종류.JPG" width="70%">
+![image](/assets/images/회귀모형 종류.JPG)
 
 <u>X가 여러개(Multiple)</u> 이면서 <u>선형(Linear)</u>인 **다중 선형 회귀분석**에 대해 알아보자.
 

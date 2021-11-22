@@ -1,6 +1,6 @@
 ## 손실함수(Loss Function)
 
-<img src = "./image/손실함수/IMG_1191.JPG" width="75%">
+![JPG](/assets/images/IMG_1191.JPG)
 
 딥러닝에서 학습은 weight 즉, 가중치 파라미터는를 업데이트하는 과정이다. 이때 weight는 현재의 상태를 표현하는 어떠한 '지표'를 가장 좋게 만들어주는 방향으로 업데이트된다. 여기서 말하는 '지표'가 바로 손실함수이다.
 
@@ -38,12 +38,11 @@
 - 오차가 커질수록 손실함수가 빠르게 증가한다. (제곱이기 때문에)
 - 회귀(Regression)에 많이 사용
 
-<img src = "./image/손실함수/IMG_1193.JPG" width="30%">
-<img src = "./image/손실함수/IMG_1192.JPG" width="50%">
-
+![JPG](/assets/images/IMG_1193.JPG)
+![JPG](/assets/images/IMG_1192.JPG)
 
 ### 평균제곱오차 함수 예제(회귀)
-<img src = "./image/손실함수/IMG_1194.JPG" width="80%">
+![JPG](/assets/images/IMG_1194.JPG)
 
 $\Rightarrow$고양이의 길이와 체중의 오차를 **종합적으로** 보고 줄여나갈 수 있다.
 
@@ -64,11 +63,11 @@ $\Rightarrow$고양이의 길이와 체중의 오차를 **종합적으로** 보�
 - 원-핫 인코딩으로 인해 정답인 클래스에 대해서만 오차를 계산한다.(정답 빼고는 다 0)
 - 정확히 맞추면 오차가 0, 틀릴수록 오차가 무한히 증가한다.
 
-<img src = "./image/손실함수/IMG_1196.JPG" width="30%">
-<img src = "./image/손실함수/IMG_1195.JPG" width="50%">
+![JPG](/assets/images/IMG_1196.JPG)
+![JPG](/assets/images/IMG_1195.JPG)
 
 
 ### 교차 엔트로피 오차 예제(다중 분류)
-<img src = "./image/손실함수/IMG_1197.JPG" width="70%">
+![JPG](/assets/images/IMG_1197.JPG)
 
 - 오차를 내는 과정에서는 정답 클래스만 비교하지만, 다중 클래스 분류의 활성함수인 Softmax로 인해 **다른 클래스에 대한 학습에도 영향을 준다.**

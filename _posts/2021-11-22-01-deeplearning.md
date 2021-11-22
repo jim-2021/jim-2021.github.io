@@ -25,7 +25,7 @@
 이를 반복해서 손실함수를 가장 작게 만드는 방향으로 모델을 만든다. 
 
 - 테스트 단계(Test Phase)
-<img src = "./image/딥러닝의 이해/IMG_1169.JPG" width="60%">
+![JPG](/assets/images/IMG_1169.JPG)
 
 학습이 완료된 네트워크에 테스트 데이터를 입력해서 평가지표를 통해 모델의 성능을 측정한다.
 
@@ -43,13 +43,13 @@
 
 - 신경 세포를 이진 출력의 단순 논리 게이트로 해석하여 고안한 것이다.
 - 입력 - 가중치 - 활성함수 - 출력
-<img src = "./image/딥러닝의 이해/IMG_1171.JPG" width="40%">
+![JPG](/assets/images/IMG_1171.JPG)
 - 퍼셉트론은 수학적으로 **내적**과 **sign 함수**로 간단하게 표현할 수 있다.
     - $y = sign(x^Tw)$
 
 #### 퍼셉트론의 동작
 - x1과 x2에 대한 직선을 그을 수 있다. 이때 우리가 관심을 가져아 할 미지수(파라미터)는 w와 b이다.
-<img src = "./image/딥러닝의 이해/IMG_1172.JPG" width="70%">
+![JPG](/assets/images/IMG_1172.JPG)
 - 퍼셉트론의 학습
     1. 임의로 선을 긋는다.
     2. 입력을 하나씩 넣어서 출력을 내본다.
@@ -66,25 +66,24 @@
     - 계단함수가 아니라 선형함수를 사용한 것이 **ADALINE(Adaptive Linear Element) 퍼셉트론**이다.
     - 위에 있는 것이 얼마나 위쪽으로 있는지, 아래 있는 것이 얼마나 아래쪽으로 있는지를 비교해서 error를 구한다.
 
-<img src = "./image/딥러닝의 이해/IMG_1173.JPG" width="70%">
+![JPG](/assets/images/IMG_1173.JPG)
 
 #### 그런데 퍼셉트론은 XOR 문제를 못 푼다! $\rightarrow$ 첫번째 딥러닝 암흑기
 
 - XOR 문제
-<img src = "./image/딥러닝의 이해/IMG_1174.JPG" width="60%">
+![JPG](/assets/images/IMG_1174.JPG)
 
 - 선 1개로는 분류 불가능 $\rightarrow$ 퍼셉트론 무의미하다!
 
 ### 2. 다층 퍼셉트론 (첫번째 Breakthrough)
 - 그러면 선을 2개 이용해보자!
 - **Linear Classifier를 쌓아서 non-linear classification을 하자! $\Rightarrow$ Multi-Layer Perceptron(MLP, 1986)**
-<img src = "./image/딥러닝의 이해/IMG_1175.JPG" width="40%">
+![JPG](/assets/images/IMG_1175.JPG)
 - 첫번째 계층(input layer) - 두번째 계층(hidden layer) - 세번째 계층(output layer)
 - 두번째 계층(hidden layer)을 넣어서 선을 2개 긋는 효과를 준다.
 
 ### 3. 역전파 알고리즘
-<img src = "./image/딥러닝의 이해/IMG_1176.JPG" width="40%">
-<center> [오류 역전파 알고리즘(Back Propagation Algorithm, BP)] </center>
+![JPG](/assets/images/IMG_1176.JPG)
 
 - 학습이 어려워서 정방향과 **역방향**을 거쳐서 더 잘 학습하도록 만든 것이다.
 - MLP와 BP 알고리즘으로 필기숫자 인식(MNIST) 문제를 해결했다.(LeCun, 1989)

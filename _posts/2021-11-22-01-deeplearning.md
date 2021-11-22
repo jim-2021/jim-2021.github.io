@@ -12,7 +12,7 @@
 
 크게 학습 단계와 테스트 단계로 나눠서 살펴보면
 - 학습단계(Training Phase)
-<img src = "./image/딥러닝의 이해/IMG_1168.JPG" width="60%">
+![JPG](/assets/images/IMG_1168.JPG)
 
 입력과 출력(정답)으로 이루어진 학습 데이터셋을 네트워크 구조에 넣어서 학습을 시킨다.
 

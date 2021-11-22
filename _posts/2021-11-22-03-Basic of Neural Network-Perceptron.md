@@ -11,7 +11,7 @@
 
 - 여러 신호를 입력으로 받아 하나의 신호로 종합하여 출력한다. 이 신호를 통해 '흐른다/흐르지 않는다.'(1 또는 0) 라는 정보를 출력으로 전달한다.
 
-<img src = "./image/딥러닝의 이해/IMG_1171.JPG" width="40%">
+![JPG](/assets/images/IMG_1171.JPG)
 
 - 원을 뉴런 또는 노드라고 한다.
 - 여러 입력신호에 각각의 고유한 가중치가 곱해진다. 
@@ -24,7 +24,7 @@
     
 #### 퍼셉트론의 동작
 
-<img src = "./image/딥러닝의 이해/IMG_1172.JPG" width="70%">
+![JPG](/assets/images/IMG_1172.JPG)
 
 - 위 그림에서 보듯이 입력인 x1과 x2에 대한 직선을 그을 수 있다. 이때 우리가 관심을 가져아 할 미지수(파라미터)는 w(가중치)와 b(편향)이다.
 - 데이터가 직선 위에 있으면 1, 아래 있으면 -1로 분류가 가능하기 때문 퍼셉트론을 통해 이진 분류 문제를 풀 수 있다.
@@ -55,7 +55,7 @@ for _ in range(max_iter):  # w를 몇 번 수정할 것인지
 #### AND, OR 게이트
 - AND : 입력 신호 모두가 1이여야 출력이 1이 되는 논리 회로. 모두가 True여야 True
 - OR : 입력 신호 중 하나 이상이 1이면 출력이 1이 되는 논리 회로. 하나만 True여도 True
-<img src = "./image/딥러닝의 이해/and or gate 그래프.JPG" width="60%">
+![JPG](/assets/images/and or gate 그래프.JPG)
 
 - 위 그림을 보면 x, y축은 그대로 있고, 직선을 이동하면서 AND, OR을 구현하고 있다. 
 - 직선을 이동하기 위해서는 파라미터(w, b) 값을 조정해야 한다.
@@ -65,7 +65,7 @@ for _ in range(max_iter):  # w를 몇 번 수정할 것인지
 - XOR 게이트는 베타적 논리합 이라는 논리 회로이다.
 - 앞서 살펴본 단층 퍼셉트론으로는 XOR 게이트를 구현할 수 없다. 
 - 퍼셉트론은 직선으로 나뉜 두 영역을 만드는데, XOR은 직선으로 두 영역을 나눌 수 없기 때문이다.
-<img src = "./image/딥러닝의 이해/IMG_1174.JPG" width="60%">
+![JPG](/assets/images/IMG_1174.JPG)
 
 ### 다층 퍼셉트론 (Multi-Layer Perceptron : MLP)
 
@@ -73,7 +73,7 @@ for _ in range(max_iter):  # w를 몇 번 수정할 것인지
 
 즉 단층 퍼셉트론으로는 XOR을 구현할 수 없지만, 다층 퍼셉트론으로는 XOR을 구현할 수 있다.
 
-<img src = "./image/딥러닝의 이해/IMG_1175.JPG" width="40%">
+![JPG](/assets/images/IMG_1175.JPG)
 
 - 첫번째 계층(input layer) - 두번째 계층(hidden layer) - 세번째 계층(output layer)
 - 두번째 계층(hidden layer)을 넣어서 **선을 2개 긋는 효과**를 준다.

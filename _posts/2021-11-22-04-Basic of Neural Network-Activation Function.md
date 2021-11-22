@@ -2,7 +2,7 @@
 
 딥러닝의 네트워크 구조에서는 노드에 들어온 값들을 바로 다음 레이어에 전달하지 하지 않고, 주로 비선형(Non-linear) 함수를 통과시킨 후에 전달한다. 이때의 함수를 활성함수(Activation Function)라고 한다.
 
-<img src = "./image/활성함수/activation function.JPG" width="60%">
+![JPG](/assets/images/activation function.JPG)
 
 #### 활성함수는 퍼셉트론의 출력에 의미를 부여해준다.
 - 노드에 들어온 **입력값이 조건을 만족하면 활성화**가 되고, **그렇지 않으면 비활성화**가 되도록 하기 때문이다.
@@ -39,8 +39,8 @@
 
 ### Sigmoid Function
 
-<img src = "./image/활성함수/sigmoid function 수식.JPG" width="30%">
-<img src = "./image/활성함수/sigmoid function graph.JPG" width="40%">
+![JPG](/assets/images/sigmoid function 수식.JPG)
+![JPG](/assets/images/sigmoid function graph.JPG)
 
 - 값이 작아질수록 0, 커질수록 1에 수렵한다.
 - 출력값이 0~1 사이로, 확률을 표현할 수 있다.
@@ -51,8 +51,8 @@
 
 ### Tanh(Hyperbolic tangent) Function
 
-<img src = "./image/활성함수/tanh function 수식.JPG" width="30%">
-<img src = "./image/활성함수/tanh function graph.JPG" width="40%">
+![JPG](/assets/images/tanh function 수식.JPG)
+![JPG](/assets/images/tanh function graph.JPG)
 
 - 값이 작아질수록 -1, 커질수록 1에 수렴한다.
 - 모든 실수 입력값에 대해 출력이 정의된다.
@@ -62,7 +62,7 @@
 
 ### Softmax Function
 
-<img src = "./image/활성함수/softmax 수식.JPG" width="30%">
+![JPG](/assets/images/softmax 수식.JPG)
 
 - 각 입력의 지수함수를 정규화한 것이다.
     - 지수함수 : 모든 입력이 0보다 크게 된다.
@@ -73,8 +73,8 @@
 
 ### ReLU Function
 
-<img src = "./image/활성함수/relu function 수식.JPG" width="30%">
-<img src = "./image/활성함수/relu function graph.JPG" width="40%">
+![JPG](/assets/images/relu function 수식.JPG)
+![JPG](/assets/images/relu function graph.JPG)
 
 - 입력이 양수일 때는 그 값을 그대로, 음수일 때는 0을 출력한다.
 - 딥러닝에서 가장 많이 사용되는 활성함수이다.

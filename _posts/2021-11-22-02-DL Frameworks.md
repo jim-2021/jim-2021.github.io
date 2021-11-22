@@ -57,6 +57,7 @@ why?
 #### TensorFlow
 - 구글에서 꾸준히 개발/배포하는 오픈 소스 프레임워크이다.
 - 학계, 산업계 모두에서 가장 사랑받는 프레임워크이다.
+
 ![JPG](/assets/images/tensorflow 순위.JPG)
 
 ### TensorFlow 2.0
